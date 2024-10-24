@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Transformar texto</title>
+    <link rel="stylesheet" href="estilos3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Transformar texto</h1>
+        <input type="text" id="texto" placeholder="Digite texto aqui">
+        <div class="radio-buttons">
+            <label>
+                <input type="radio" name="transformacao" value="maiusculas" onclick="transformarTexto()"> Letras Maiúsculas
+            </label>
+            <label>
+                <input type="radio" name="transformacao" value="minusculas" onclick="transformarTexto()"> Letras Minúsculas
+            </label>
+        </div>
+        <p id="resultado"></p>
+    </div>
+    <script src="base3.js"></script>
+</body>
+</html>
