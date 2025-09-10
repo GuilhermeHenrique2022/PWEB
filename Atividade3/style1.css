@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --corprincipal: #c8c8c8;
+  --cor-destaque: #8257E5;
+  --cor-header: #333;
+  --cor-texto: #333;
+  --cor-branco: #ffffff;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  background-color: var(--corprincipal);
+  padding-top: 70px;
+}
+
+.header-1 {
+  background-color: var(--cor-header);
+  color: var(--cor-branco);
+  padding: 15px 0;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  color: var(--corprincipal);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  padding: 5px 0 10px 0;
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  text-align: center;
+}
+
+.nav-list h3 {
+  color: var(--cor-branco);
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 6px 10px;
+}
+
+.nav-link {
+  color: var(--corprincipal);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all .25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--cor-branco);
+  background-color: #555;
+}
+
+.section {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background: var(--cor-branco);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: var(--cor-destaque);
+}
+
+section h3 {
+  margin: 18px 0 10px;
+  color: var(--cor-header);
+}
+
+ul, ol {
+  margin: 14px 0 14px 24px;
+}
+
+li { margin-bottom: 8px; }
+
+p { margin: 10px 0; }
+
+article { margin-top: 8px; }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--cor-header);
+  color: var(--cor-branco);
+  margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+  .section {
+    margin: 24px 12px;
+    padding: 28px 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .nav-item {
+    margin: 4px 6px;
+  }
+
+  .nav-logo {
+    font-size: 18px;
+  }
+}
