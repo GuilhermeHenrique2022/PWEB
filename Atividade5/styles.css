@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.responsive-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#color-name {
+    margin: 0;
+    font-size: 2em;
+    color: white;
+}
+
+@media (max-width: 420px) {
+    .responsive-box {
+        background-color: gray;
+    }
+    #color-name::before {
+        content: "Cinza";
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .responsive-box {
+        background-color: orange;
+    }
+    #color-name::before {
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .responsive-box {
+        background-color: pink;
+    }
+    #color-name::before {
+        content: "Rosa";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .responsive-box {
+        background-color: red;
+    }
+    #color-name::before {
+        content: "Vermelho";
+    }
+}
+
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .responsive-box {
+        background-color: blue;
+    }
+    #color-name::before {
+        content: "Azul";
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .responsive-box {
+        background-color: yellow;
+    }
+    #color-name::before {
+        content: "Amarelo";
+    }
+}
+
+
+@media (min-width: 1921px) {
+    .responsive-box {
+        background-color: green;
+    }
+    #color-name::before {
+        content: "Verde";
+    }
+}
