@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9 - Funções JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Atividade 9 - Funções em JavaScript</h1>
+
+    <section>
+        <h2>1. Maior de Três Números</h2>
+        <input type="number" id="num1_maior" placeholder="Número 1">
+        <input type="number" id="num2_maior" placeholder="Número 2">
+        <input type="number" id="num3_maior" placeholder="Número 3">
+        <button onclick="encontrarMaior()">Encontrar Maior</button>
+        <p>Resultado: <span id="resultado_maior"></span></p>
+    </section>
+
+    <section>
+        <h2>2. Ordenar Três Números</h2>
+        <input type="number" id="num1_ordenar" placeholder="Número 1">
+        <input type="number" id="num2_ordenar" placeholder="Número 2">
+        <input type="number" id="num3_ordenar" placeholder="Número 3">
+        <button onclick="ordenarNumeros()">Ordenar</button>
+        <p>Resultado: <span id="resultado_ordenar"></span></p>
+    </section>
+
+    <section>
+        <h2>3. Verificar Palíndromo</h2>
+        <input type="text" id="palavra_palindromo" placeholder="Digite uma palavra ou frase">
+        <button onclick="verificarPalindromo()">Verificar</button>
+        <p>Resultado: <span id="resultado_palindromo"></span></p>
+    </section>
+
+    <section>
+        <h2>4. Tipo de Triângulo</h2>
+        <input type="number" id="ladoA_triangulo" placeholder="Lado A">
+        <input type="number" id="ladoB_triangulo" placeholder="Lado B">
+        <input type="number" id="ladoC_triangulo" placeholder="Lado C">
+        <button onclick="analisarTriangulo()">Analisar</button>
+        <p>Resultado: <span id="resultado_triangulo"></span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
