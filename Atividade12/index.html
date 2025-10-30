@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Retângulo e Contas</h1>
+
+    <section>
+        <h2>Calculo Área do Retângulo</h2>
+        <input type="number" id="base" placeholder="Base (x)" required>
+        <input type="number" id="altura" placeholder="Altura (y)" required>
+        <button onclick="calcularArea()">Calcular area</button>
+        <p id="resultado-area"></p>
+    </section>
+
+    <section>
+        <h2>Cadastro - Conta</h2>
+        <input type="text" id="nome" placeholder="Nome do Correntista" required>
+        <input type="text" id="banco" placeholder="Banco" required>
+        <input type="text" id="numeroConta" placeholder="Número da Conta" required>
+        <input type="number" id="saldo" placeholder="Saldo" required>
+        <button onclick="criarConta()">Criar conta corrente</button>
+
+        <h3>Conta Corrente com Saldo Especial</h3>
+        <input type="number" id="saldoEspecial" placeholder="Saldo Especial" required>
+        <button onclick="criarContaCorrente()">Criar conta corrente especial</button>
+
+        <h3>Conta Poupança</h3>
+        <input type="number" id="juros" placeholder="Taxa de Juros (%)" required>
+        <input type="date" id="dataVencimento" required>
+        <button onclick="criarContaPoupanca()">Criar conta poupança</button>
+
+        <h2>Dados das contas</h2>
+        <p id="dados-contas"></p>
+    </section>
+
+    <script src="ativo.js"></script>
+</body>
+</html>
